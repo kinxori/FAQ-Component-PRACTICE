@@ -1,0 +1,17 @@
+.article{
+    background-color: #323232;
+    margin: 0;
+    display: grid;
+    justify-items: center;
+}
+
+.article h1{
+  font-size: 60px;
+  margin: 0;
+}
+
+.article p{
+    font-size: 30px;
+    margin: 0;
+}
+

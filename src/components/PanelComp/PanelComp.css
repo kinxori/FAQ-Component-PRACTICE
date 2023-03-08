@@ -1,0 +1,173 @@
+@keyframes rotation{
+
+}
+.buttonsArrange {
+    display: grid;
+    justify-content: center;
+    margin-top: 30px;
+    margin: 30px;
+}
+.buttonsArrange .head{
+    margin: 0px;
+    text-align: center;
+    font-size: 80px;
+}
+.buttonsArrange .titleDesc{
+    margin:30px;
+    text-align: center;
+}
+
+.openClass {
+    margin: 10px;
+    background-color: teal;
+    display: flex;
+    flex-direction: column;
+    border-radius: 18px;
+    width: 500px;
+    height: 300px;
+    border: 2px solid white;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+.openClass:hover{
+    box-shadow: 0 15px 25px  rgba(0,0,0,0.15), 0 5px 10px  rgba(0,0,0,0.05);
+}
+.openClass div{
+    display: flex;
+    justify-content:flex-start;
+    background-color: hsl(0, 0%, 15%);
+    padding: 24px;
+    align-items: center;
+}
+.openClass .pfp{
+    width: 120px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+.openClass .description{
+    color: white;
+    font-size: 24px;
+    width: 300px;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    padding: 0;
+}
+.openClass button{
+    border: none;
+    background:transparent;
+    font-size: 24px;
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    margin-left: auto;
+    transition: all .3s ease-in-out;
+
+}
+
+.openClass button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.openClass .arrow{
+    width: 30px;
+    height: 30px;
+    object-fit:cover;
+    margin-left: 0px;
+    background-color: hsl(0, 0%, 10%);
+    border-radius: 100%;
+    padding: 10px;
+    transform:rotate(0deg);
+    transition: transform .3s ease-in-out;
+
+}
+
+.openClass span{
+    
+    padding: 20px;
+}
+.openClass p{
+    font-size: 20px;
+    text-justify: left;
+    padding-left: 20px;
+    font-family: var(--font-code);
+}
+
+
+
+
+/*  CLOSE CLASS */
+
+
+
+.closeClass {
+    margin: 10px;
+    background-color: hsl(0, 0%, 20%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 18px;
+    width: 500px;
+    height: 168px;
+    border: 2px solid white;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.closeClass:hover{
+    box-shadow: 0 15px 25px  rgba(0,0,0,0.15), 0 5px 10px  rgba(0,0,0,0.05);
+}
+.closeClass div{
+    display: flex;
+    justify-content:flex-start;
+    background-color: hsl(0, 0%, 10%);
+    padding: 24px;
+    align-items: center;
+}
+.closeClass .pfp{
+    width: 120px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+.closeClass .description{
+    color: white;
+    font-size: 24px;
+    width: 300px;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+.closeClass button{
+    border: none;
+    background:transparent;
+    font-size: 24px;
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    margin-left: auto;
+    transition: all .3s ease-in-out;
+
+}
+
+.closeClass button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.closeClass .arrow{
+    width: 30px;
+    height: 30px;
+    object-fit:cover;
+    margin-left: 0px;
+    background-color: teal;
+    border-radius: 100%;
+    padding: 10px;
+    transform:rotate(-90deg);
+    transition: transform .3s ease-in-out;
+
+}
+
+.closeClass span{
+    
+    padding: 20px;
+}
+.closeClass p{
+    font-size: 20px;
+    text-justify: left;
+}
