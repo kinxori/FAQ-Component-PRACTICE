@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import "./PanelComp.css"
+import "/src/assets/arrow-icon.png"
 
 export default function PanelComp(){
     const [character, setCharacter] = useState<{
