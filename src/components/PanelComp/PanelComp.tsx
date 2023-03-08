@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import "./PanelComp.css"
-import "/src/assets/arrow-icon.png"
+import myArrowIcon from "/src/assets/arrow-icon.png"
 
 export default function PanelComp(){
     const [character, setCharacter] = useState<{
@@ -16,7 +16,7 @@ export default function PanelComp(){
     }[]>([])
     const [isOpen, setIsOpen] = useState<any>(null)
 
-
+const arrowIcon : string = myArrowIcon;
 // METHOD 1 
 
     // const handleCLick = (id) => {
@@ -65,6 +65,7 @@ export default function PanelComp(){
                 status={item.status} 
                 species={item.species}
                 gender={item.gender}
+                arrowIcon={arrowIcon}
             />)
         )}
     </div>
@@ -74,9 +75,9 @@ export default function PanelComp(){
 //-----------------------------------------
 
 
-const Buttons = ({isOpen, name, id, status, species, gender, image, handleCLick}
+const Buttons = ({isOpen, name, id, status, species, gender, image, handleCLick, arrowIcon}
     :
-    {isOpen: any, name: string, id: number, status: string, species:string, gender:string, image: any, handleCLick: any})=>{
+    {isOpen: any, name: string, id: number, status: string, species:string, gender:string, image: any, handleCLick: any, arrowIcon: string})=>{
 
     return (
         <div className={isOpen === id ? "openClass" : "closeClass"} > 
@@ -84,7 +85,7 @@ const Buttons = ({isOpen, name, id, status, species, gender, image, handleCLick}
                 <img src={image} alt={name} className="pfp" />
                 <p className="description">{isOpen === id ? "Hide Description" : "Show Description"} </p>
                 <button onClick={()=>handleCLick(id)}> 
-                    <img className="arrow" src="/src/assets/arrow-icon.png" alt="" />
+                    <img className="arrow" src={arrowIcon} alt="" />
                 </button>
                
             </div>
