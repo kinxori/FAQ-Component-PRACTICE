@@ -1,5 +1,5 @@
 import './App.css'
-import PanelComp from "./components/PanelComp/PanelComp.jsx"
+import PanelComp from "./components/PanelComp/PanelComp"
 
 export default function App() {
 
