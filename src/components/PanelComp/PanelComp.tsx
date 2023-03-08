@@ -2,8 +2,18 @@ import { useEffect, useState } from "react"
 import "./PanelComp.css"
 
 export default function PanelComp(){
-    const [character, setCharacter] = useState([])
-    const [isOpen, setIsOpen] = useState(null)
+    const [character, setCharacter] = useState<{
+        id:number,
+        name:string,
+        image: any,
+        status: string,
+        species: string,
+        gender: string,
+        isOpen: any,
+        handleCLick: any,
+        key: any,
+    }[]>([])
+    const [isOpen, setIsOpen] = useState<any>(null)
 
 
 // METHOD 1 
@@ -25,8 +35,8 @@ export default function PanelComp(){
 
 // METHOD 3
 
-    const handleCLick = (id) => {
-        setIsOpen(currentValue => currentValue !== id ? id : false)
+    const handleCLick = (id : any) => {
+        setIsOpen((currentValue : any) => currentValue !== id ? id : false)
     }
 
     useEffect (()=>{
@@ -63,7 +73,9 @@ export default function PanelComp(){
 //-----------------------------------------
 
 
-const Buttons = ({isOpen, name, id, status, species, gender, image, handleCLick})=>{
+const Buttons = ({isOpen, name, id, status, species, gender, image, handleCLick}
+    :
+    {isOpen: any, name: string, id: number, status: string, species:string, gender:string, image: any, handleCLick: any})=>{
 
     return (
         <div className={isOpen === id ? "openClass" : "closeClass"} > 
