@@ -51,8 +51,8 @@ const arrowIcon : string = myArrowIcon;
 
  return(
     <div className="buttonsArrange" >
-        <h1 className="head">FAQs</h1>
-        <p className="titleDesc">Rick & Morty Characters</p>
+        <h1 className="head">Fetch API</h1>
+        <p className="titleDesc">Rick & Morty Characters API</p>
 
         {character.map((item) =>  
             (<Buttons 
